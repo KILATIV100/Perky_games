@@ -1,19 +1,29 @@
 <svg width="85mm" height="120mm" viewBox="0 0 85 120" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .metal-bg { fill: #1a1a1a; rx: 3; ry: 3; }
-    .engraving { fill: #e0e0e0; font-family: Arial, sans-serif; text-anchor: middle; }
-    .logo-text { font-family: 'Comic Sans MS', cursive, sans-serif; font-weight: bold; font-size: 24px; }
-    .slogan { font-size: 5px; letter-spacing: 2px; text-transform: uppercase; }
-    .info-text { font-size: 4px; }
-    .nominal { font-size: 3.5px; font-weight: bold;}
+    .metal-bg { fill: #1a1a1a; rx: 4; ry: 4; }
+    .engraving { fill: #e0e0e0; }
+    .chip-fill { fill: #e0e0e0; }
+    .logo-text { font-family: 'Comic Sans MS', cursive, sans-serif; font-weight: bold; font-size: 20px; fill: #e0e0e0; }
+    .tech-text { font-family: 'Courier New', monospace; font-size: 3.5px; fill: #e0e0e0; letter-spacing: 0.5px; }
+    .tech-header { font-family: 'Courier New', monospace; font-size: 2.5px; fill: #888; text-transform: uppercase;}
+    .trace-line { stroke: #555; stroke-width: 0.3; fill: none; }
   </style>
 
   <g transform="translate(0, 0)">
     <rect x="0" y="0" width="85" height="55" class="metal-bg" />
     
-    <text x="42.5" y="30" class="engraving logo-text">PerkUP</text>
+    <rect x="8" y="20" width="14" height="11" rx="2" class="chip-fill" />
+    <line x1="8" y1="23.5" x2="22" y2="23.5" stroke="#1a1a1a" stroke-width="0.5" />
+    <line x1="8" y1="27.5" x2="22" y2="27.5" stroke="#1a1a1a" stroke-width="0.5" />
+    <line x1="13" y1="20" x2="13" y2="31" stroke="#1a1a1a" stroke-width="0.5" />
+    <line x1="17" y1="20" x2="17" y2="31" stroke="#1a1a1a" stroke-width="0.5" />
+
+    <polyline points="22,25 30,25 35,20" class="trace-line" />
+    <polyline points="22,29 30,29 35,34" class="trace-line" />
+
+    <text x="38" y="30" class="logo-text">PerkUP</text>
     
-    <text x="42.5" y="45" class="engraving slogan">Key to Energy</text>
+    <text x="38" y="38" class="tech-text">KEY_TO_ENERGY // V.01</text>
     
     <text x="42.5" y="60" fill="#555" font-size="3">Сторона А (Лицьова)</text>
   </g>
@@ -21,11 +31,28 @@
   <g transform="translate(0, 65)">
     <rect x="0" y="0" width="85" height="55" class="metal-bg" />
     
-    <text x="42.5" y="12" class="engraving info-text">ОБМІНЯЙ НА НАПІЙ + STORY</text>
+    <rect x="8" y="12" width="28" height="28" fill="#e0e0e0" />
+    <rect x="10" y="14" width="24" height="24" fill="#1a1a1a" /> 
+    <rect x="14" y="18" width="16" height="16" fill="#e0e0e0" />
+
+    <line x1="42" y1="10" x2="42" y2="45" stroke="#555" stroke-width="0.3" />
+
+    <text x="46" y="15" class="tech-header">TASK:</text>
+    <text x="46" y="19" class="tech-text">SCAN + SHARE STORY</text>
     
-    <rect x="30" y="15" width="25" height="25" fill="#e0e0e0" />
-    <rect x="32" y="17" width="21" height="21" fill="#1a1a1a" /> <rect x="36" y="21" width="13" height="13" fill="#e0e0e0" /> <text x="42.5" y="48" class="engraving nominal">НОМІНАЛ: ДО 100 ГРН</text>
+    <text x="46" y="26" class="tech-header">REWARD:</text>
+    <text x="46" y="30" class="tech-text">ONE DRINK (FREE)</text>
     
+    <text x="46" y="37" class="tech-header">LIMIT:</text>
+    <text x="46" y="41" class="tech-text">&lt; 100 UAH VALUE</text>
+
+    <g transform="translate(46, 46)">
+        <rect x="0" y="0" width="1" height="4" fill="#555"/>
+        <rect x="2" y="0" width="3" height="4" fill="#555"/>
+        <rect x="6" y="0" width="1" height="4" fill="#555"/>
+        <rect x="8" y="0" width="4" height="4" fill="#555"/>
+    </g>
+
     <text x="42.5" y="60" fill="#555" font-size="3">Сторона Б (Зворотна)</text>
   </g>
 </svg>
