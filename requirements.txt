@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-python-telegram-bot[ext]
-pydantic
-python-dotenv
-httpx
-uvloop
