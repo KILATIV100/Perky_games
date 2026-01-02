@@ -1,0 +1,31 @@
+<svg width="85mm" height="120mm" viewBox="0 0 85 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .metal-bg { fill: #1a1a1a; rx: 3; ry: 3; }
+    .engraving { fill: #e0e0e0; font-family: Arial, sans-serif; text-anchor: middle; }
+    .logo-text { font-family: 'Comic Sans MS', cursive, sans-serif; font-weight: bold; font-size: 24px; }
+    .slogan { font-size: 5px; letter-spacing: 2px; text-transform: uppercase; }
+    .info-text { font-size: 4px; }
+    .nominal { font-size: 3.5px; font-weight: bold;}
+  </style>
+
+  <g transform="translate(0, 0)">
+    <rect x="0" y="0" width="85" height="55" class="metal-bg" />
+    
+    <text x="42.5" y="30" class="engraving logo-text">PerkUP</text>
+    
+    <text x="42.5" y="45" class="engraving slogan">Key to Energy</text>
+    
+    <text x="42.5" y="60" fill="#555" font-size="3">Сторона А (Лицьова)</text>
+  </g>
+
+  <g transform="translate(0, 65)">
+    <rect x="0" y="0" width="85" height="55" class="metal-bg" />
+    
+    <text x="42.5" y="12" class="engraving info-text">ОБМІНЯЙ НА НАПІЙ + STORY</text>
+    
+    <rect x="30" y="15" width="25" height="25" fill="#e0e0e0" />
+    <rect x="32" y="17" width="21" height="21" fill="#1a1a1a" /> <rect x="36" y="21" width="13" height="13" fill="#e0e0e0" /> <text x="42.5" y="48" class="engraving nominal">НОМІНАЛ: ДО 100 ГРН</text>
+    
+    <text x="42.5" y="60" fill="#555" font-size="3">Сторона Б (Зворотна)</text>
+  </g>
+</svg>
